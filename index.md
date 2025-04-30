@@ -4,7 +4,6 @@ title: Welcome
 ---
 
 <style>
-/* Simple card grid */
 .home-cards {
   display: grid;
   gap: 1rem;
@@ -17,9 +16,11 @@ title: Welcome
   border-radius: 0.5rem;
   text-align: center;
 }
-.card a {
-  text-decoration: none;
-  color: inherit;
+.card h3 {
+  margin-top: 0;
+}
+.card p {
+  margin-bottom: 0;
 }
 </style>
 
@@ -30,19 +31,16 @@ I blog about proofs, notes, and projects.
 
 <div class="home-cards">
   <div class="card">
-    ## About  
-    Learn more about me.  
-    [→](/about/)
+    <h3>About</h3>
+    <p>Learn more about me. <a href="/about/">→</a></p>
   </div>
   <div class="card">
-    ## Blog  
-    Latest posts, notes & thoughts.  
-    [→](/2025/)
+    <h3>Blog</h3>
+    <p>Latest posts, notes & thoughts. <a href="/2025/">→</a></p>
   </div>
   <div class="card">
-    ## Projects  
-    Code, papers, and examples.  
-    [→](/projects/)
+    <h3>Projects</h3>
+    <p>Code, papers, and examples. <a href="/projects/">→</a></p>
   </div>
 </div>
 
@@ -51,5 +49,5 @@ I blog about proofs, notes, and projects.
 Here’s a quick example rendered with MathJax:
 
 \[
-e^{i\pi} + 1 = 0
+  e^{i\pi} + 1 = 0
 \]
